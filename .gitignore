@@ -1,0 +1,8 @@
+bin
+obj
+.vscode
+ds_store
+.vs
+.idea
+appsettings.json
+*.db
