@@ -1,5 +1,5 @@
 import React from "react";
-import { Menu, Container, Button } from "semantic-ui-react";
+import { Menu, Container, Button, Responsive } from "semantic-ui-react";
 
 export const Navbar = () => {
   return (
@@ -10,9 +10,9 @@ export const Navbar = () => {
           Reactivities
         </Menu.Item>
         <Menu.Item name="activities" />
-        <Menu.Item>
+        <Responsive as={Menu.Item} {...Responsive.onlyComputer}>
           <Button positive content="Create Activity" />
-        </Menu.Item>
+        </Responsive>
       </Container>
     </Menu>
   );
